@@ -199,7 +199,7 @@
     }
 }
 
-- (void)addLinks:(NSArray *)array
+- (void)addLinks:(NSArray<GPXLink *> *)array
 {
     for (GPXLink *link in array) {
         [self addLink:link];

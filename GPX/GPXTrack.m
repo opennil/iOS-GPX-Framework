@@ -105,7 +105,7 @@
     }
 }
 
-- (void)addLinks:(NSArray *)array
+- (void)addLinks:(NSArray<GPXLink *> *)array
 {
     for (GPXLink *link in array) {
         [self addLink:link];
@@ -139,7 +139,7 @@
     }
 }
 
-- (void)addTracksegments:(NSArray *)array
+- (void)addTracksegments:(NSArray<GPXTrackSegment *> *)array
 {
     for (GPXTrackSegment *tracksegment in array) {
         [self addTracksegment:tracksegment];

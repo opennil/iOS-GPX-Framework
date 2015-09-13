@@ -69,7 +69,7 @@
     }
 }
 
-- (void)addTrackpoints:(NSArray *)array
+- (void)addTrackpoints:(NSArray<GPXTrackPoint *> *)array
 {
     for (GPXTrackPoint *trackpoint in array) {
         [self addTrackpoint:trackpoint];

@@ -64,7 +64,7 @@
     }
 }
 
-- (void)addPoints:(NSArray *)array
+- (void)addPoints:(NSArray<GPXPoint *> *)array
 {
     for (GPXPoint *point in array) {
         [self addPoint:point];

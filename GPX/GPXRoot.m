@@ -119,7 +119,7 @@
     }
 }
 
-- (void)addWaypoints:(NSArray *)array
+- (void)addWaypoints:(NSArray<GPXWaypoint *> *)array
 {
     for (GPXWaypoint *wpt in array) {
         [self addWaypoint:wpt];
@@ -153,7 +153,7 @@
     }
 }
 
-- (void)addRoutes:(NSArray *)array
+- (void)addRoutes:(NSArray<GPXRoute *> *)array
 {
     for (GPXRoute *rte in array) {
         [self addRoute:rte];
@@ -187,7 +187,7 @@
     }
 }
 
-- (void)addTracks:(NSArray *)array
+- (void)addTracks:(NSArray<GPXTrack *> *)array
 {
     for (GPXTrack *trk in array) {
         [self addTrack:trk];
