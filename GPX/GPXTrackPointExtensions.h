@@ -11,9 +11,9 @@
 @interface GPXTrackPointExtensions : GPXElement
 
 /* see: http://www8.garmin.com/xmlschemas/TrackPointExtensionv2.xsd */
-@property (nonatomic, strong) NSNumber *heartRate;
-@property (nonatomic, strong) NSNumber *cadence;
-@property (nonatomic, strong) NSNumber *speed;
-@property (nonatomic, strong) NSNumber *course;
+@property (nonatomic, strong) NSNumber * _Nullable heartRate;
+@property (nonatomic, strong) NSNumber * _Nullable cadence;
+@property (nonatomic, strong) NSNumber * _Nullable speed;
+@property (nonatomic, strong) NSNumber * _Nullable course;
 
 @end

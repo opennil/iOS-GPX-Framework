@@ -27,26 +27,26 @@
 /// ---------------------------------
 
 /** The namespace for external XML schemas. */
-@property (strong, nonatomic, readonly) NSString *schema;
+@property (strong, nonatomic, readonly) NSString * _Nonnull schema;
 
 /** You must include the version number in your GPX document. */
-@property (strong, nonatomic) NSString *version;
+@property (strong, nonatomic) NSString * _Nullable version;
 
 /** You must include the name or URL of the software that created your GPX document. 
     This allows others to inform the creator of a GPX instance document that fails to validate. */
-@property (strong, nonatomic) NSString *creator;
+@property (strong, nonatomic) NSString * _Nullable creator;
 
 /** Metadata about the file. */
 @property (strong, nonatomic) GPXMetadata *metadata;
 
 /** A list of waypoints. */
-@property (strong, nonatomic, readonly) NSArray<GPXWaypoint *> *waypoints;
+@property (strong, nonatomic, readonly) NSArray<GPXWaypoint *> * _Nullable waypoints;
 
 /** A list of routes. */
-@property (strong, nonatomic, readonly) NSArray<GPXRoute *> *routes;
+@property (strong, nonatomic, readonly) NSArray<GPXRoute *> * _Nullable routes;
 
 /** A list of tracks. */
-@property (strong, nonatomic, readonly) NSArray<GPXTrack *> *tracks;
+@property (strong, nonatomic, readonly) NSArray<GPXTrack *> * _Nullable tracks;
 
 /** You can add extend GPX by adding your own elements from another schema here. */
 @property (strong, nonatomic) GPXExtensions *extensions;
