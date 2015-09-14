@@ -24,28 +24,28 @@
 /// ---------------------------------
 
 /** GPS name of track. */
-@property (strong, nonatomic) NSString *name;
+@property (strong, nonatomic) NSString * _Nullable name;
 
 /** GPS comment for track. */
-@property (strong, nonatomic) NSString *comment;
+@property (strong, nonatomic) NSString * _Nullable comment;
 
 /** User description of track. */
-@property (strong, nonatomic) NSString *desc;
+@property (strong, nonatomic) NSString * _Nullable desc;
 
 /** Source of data. Included to give user some idea of reliability and accuracy of data. */
-@property (strong, nonatomic) NSString *source;
+@property (strong, nonatomic) NSString * _Nullable source;
 
 /** Links to external information about track. */
-@property (strong, nonatomic, readonly) NSArray<GPXLink *> *links;
+@property (strong, nonatomic, readonly) NSArray<GPXLink *> * _Nullable links;
 
 /** GPS track number. */
 @property (nonatomic) NSInteger number;
 
 /** Type (classification) of track. */
-@property (strong, nonatomic) NSString *type;
+@property (strong, nonatomic) NSString * _Nullable type;
 
 /** You can add extend GPX by adding your own elements from another schema here. */
-@property (strong, nonatomic) GPXExtensions *extensions;
+@property (strong, nonatomic) GPXExtensions * _Nullable extensions;
 
 /** A Track Segment holds a list of Track Points which are logically connected in order.
     To represent a single GPS track where GPS reception was lost, or the GPS receiver was turned off, 
@@ -133,6 +133,6 @@
  @param longitude The longitude of the point.
  @return A newly created trackpoint element.
  */
-- (GPXTrackPoint *)newTrackpointWithLatitude:(CGFloat)latitude longitude:(CGFloat)longitude;
+- (GPXTrackPoint * _Nonnull)newTrackpointWithLatitude:(CGFloat)latitude longitude:(CGFloat)longitude;
 
 @end

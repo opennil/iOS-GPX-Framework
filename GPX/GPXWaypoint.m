@@ -346,7 +346,8 @@
     [self gpx:gpx addPropertyForValue:_comment tagName:@"cmt" indentationLevel:indentationLevel];
     [self gpx:gpx addPropertyForValue:_desc tagName:@"desc" indentationLevel:indentationLevel];
     [self gpx:gpx addPropertyForValue:_source tagName:@"src" indentationLevel:indentationLevel];
-    
+    [self gpx:gpx addPropertyForValue:_speedValue tagName:@"speed" indentationLevel:indentationLevel];
+   
     for (GPXLink *link in self.links) {
         [link gpx:gpx indentationLevel:indentationLevel];
     }
